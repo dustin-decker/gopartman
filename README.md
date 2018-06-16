@@ -15,6 +15,17 @@ This package is meant to build a binary which can be used from the command line 
 partitions. It can also be brought into another package for use there as well and need not run by itself. Just keep in mind that there are regular tasks that need to be performed 
 to manage your Postgres partition tables. This package will do this maintenance on scheduled tasks which is why you might want to run it by itself.
 
+### Building
+
+1. Get dependencies
+    ```bash
+    dep ensure
+    ```
+1. Compile
+    ```bash
+    go build
+    ```
+
 ### Features
 
 * Command line interface for managing partitions (configured in YAML or added via RESTful API)    
